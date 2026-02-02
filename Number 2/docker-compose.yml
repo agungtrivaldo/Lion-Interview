@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  image-analyzer:
+    build: .
+    container_name: image_analyzer
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./images:/app/images
+      - ./output:/app/output
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
