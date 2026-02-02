@@ -40,6 +40,7 @@ User: oltp_user
 
 Password: oltp_pass
 
+
 Data Warehouse (DWH)
 
 Host: localhost
@@ -51,6 +52,7 @@ DB: dwh_db
 User: dwh_user
 
 Password: dwh_pass
+
 
 Airflow Metadata DB
 
