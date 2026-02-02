@@ -10,19 +10,6 @@ Airflow DAGs for scheduled ETL jobs
 Persistent storage using Docker volumes
 Airflow Web UI for monitoring DAGs
 
-## Project Structure
-
-airflow/
-├── dags/ # Airflow DAGs and ETL scripts
-├── logs/ # Airflow logs
-docker-compose.yml # Docker Compose configuration
-Dockerfile.airflow # Custom Airflow image
-README.md # Project documentation
-volumes/
-├── oltp/ # OLTP DB persistent data
-├── dwh/ # DWH DB persistent data
-└── airflow/ # Airflow DB persistent data
-
 ## Setup Instructions
 
 ### 1 Prerequisites
@@ -76,15 +63,6 @@ Image blur detection and description generation
 Batch image processing and CSV export
 Dockerized setup with persistent storage
 FastAPI-based REST API
-
-## Project Structure
-number_2_image_api/
-├── app/
-│ └── main.py # FastAPI main script
-├── dataset/ # Folder to store input images
-├── output/ # Folder to store CSV summary
-├── Dockerfile # Docker configuration
-└── requirements.txt # Python dependencies
 
 ## Setup Instructions
 
