@@ -28,7 +28,7 @@ Python ≥ 3.10 (optional, for DAG development)
 docker-compose up -d
 
 ### 3 Access Databases
-OLTP DB
+#### OLTP DB
 
 Host: localhost
 
@@ -41,7 +41,7 @@ User: oltp_user
 Password: oltp_pass
 
 
-Data Warehouse (DWH)
+#### Data Warehouse (DWH)
 
 Host: localhost
 
@@ -54,7 +54,7 @@ User: dwh_user
 Password: dwh_pass
 
 
-Airflow Metadata DB
+#### Airflow Metadata DB
 
 Host: postgres_airflow
 
