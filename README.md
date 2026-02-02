@@ -108,21 +108,13 @@ docker build -t image_api .
 
 #### Build Docker Compose (if needed)
 services:
-
   api:
-  
     image: agung/image-api:latest
-    
     ports:
-    
       - "8000:8000"
-      
     volumes:
-    
       - ./images:/app/images
-      
     environment:
-    
       - GEMINI_API_KEY=&{GEMINI_API_KEY}
 
 ### 4 Run Docker Compose
@@ -158,20 +150,3 @@ Gemini API key must be exported as environment variable
 requirements.txt includes all dependencies (fastapi, uvicorn, opencv-python, requests, openai, pandas)
 
 Create a new docker compose if using other vm 
-    services:
-    
-    api:
-    
-        image: agung/image-api:latest
-        
-        ports:
-        
-        - "8000:8000"
-        
-        volumes:
-        
-        - ./images:/app/images
-        
-        environment:
-        
-        - GEMINI_API_KEY=&{GEMINI_API_KEY}
