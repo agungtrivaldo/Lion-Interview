@@ -23,6 +23,7 @@ docker-compose up -d
 
 ### 3 Access Databases
 OLTP DB
+
 Host: localhost
 Port: 5432
 DB: oltp_db
